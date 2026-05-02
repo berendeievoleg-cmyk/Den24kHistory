@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Доступ ограничен</title>
+    <title>Страница недоступна</title>
     <style>
         body {
-            background-color: #0b0b0b;
-            color: #d1d1d1;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: #ffffff;
+            color: #1a1a1b;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -18,42 +18,59 @@
             padding: 20px;
             text-align: center;
         }
-        .container {
-            max-width: 600px;
-            border: 1px solid #333;
-            padding: 30px;
-            background: #111;
+
+        .content {
+            max-width: 500px;
         }
+
         img {
-            max-width: 100%;
+            max-width: 280px;
             height: auto;
-            margin-bottom: 25px;
-            border: 1px solid #444;
+            margin-bottom: 30px;
         }
+
         h1 {
-            color: #ff4d4d;
-            font-size: 1.5rem;
-            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #000000;
         }
-        .reason {
-            margin-top: 20px;
-            padding: 15px;
-            background: #1a1a1a;
-            border-left: 3px solid #ff4d4d;
-            font-style: italic;
-            text-align: left;
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #5c5c5c;
+            margin-bottom: 25px;
+        }
+
+        .info-block {
+            font-size: 14px;
+            color: #878a8c;
+            border-top: 1px solid #edeff1;
+            padding-top: 20px;
+        }
+
+        .evidence {
+            display: block;
+            margin-top: 8px;
+            font-weight: 500;
+            color: #1a1a1b;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://s2.ezgif.com/tmp/ezgif-26771dc58dffc931.png" alt="System Error">
-        <h1>Сайт закрыт / Вышел из строя</h1>
-        <p>К сожалению, данный ресурс больше не доступен.</p>
-        <div class="reason">
-            <strong>Причина / Доказательства:</strong><br>
-            Информации о этом не должны существовать.
+
+    <div class="content">
+        <img src="https://s2.ezgif.com/tmp/ezgif-26771dc58dffc931.png" alt="Status Image">
+        
+        <h1>Сайт закрыт или вышел из строя</h1>
+        <p>К сожалению, запрашиваемый ресурс больше не доступен для просмотра.</p>
+        
+        <div class="info-block">
+            Причина / Доказательства:
+            <span class="evidence">Информации о этом не должны существовать.</span>
         </div>
     </div>
+
 </body>
 </html>
